@@ -1,0 +1,7 @@
+.text-monospace {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+}
+
+.card {
+  border: 1px solid #f0f0f0;
+}
