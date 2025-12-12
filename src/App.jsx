@@ -1,6 +1,6 @@
-import GitHubUsers from "./components/GitHubUsers";
+import GitHubUsers from "./GitHubUsers";
 import { Routes, Route, Link } from "react-router-dom";
-import UserDetails from "./components/UserDetails";
+import UserDetails from "./UserDetails";
 function App() {
   return (
     <>
