@@ -34,23 +34,23 @@ function UserDetails() {
       <Card>
         <Card.Body>
           <Row>
-            <Col md={8}>
+            <Col md={8} className="mb-3">
               <h3>{user.name}</h3>
               <p className="text-muted">@{user.login}</p>
 
-              <h6>Bio</h6>
+              <h6 className="text-uppercase text-muted">Bio</h6>
               <p>{user.bio || "No bio available"}</p>
 
-              <h6>Location</h6>
+              <h6 className="text-uppercase text-muted mt-3">Location</h6>
               <p>{user.location || "Unknown"}</p>
 
-              <h6>GitHub</h6>
+              <h6 className="text-uppercase text-muted mt-3">GitHub</h6>
               <a href={user.html_url} target="_blank">
                 {user.html_url}
               </a>
             </Col>
 
-            <Col md={4} className="border-start">
+            <Col md={4} className="border-start ps-3">
               <h5>Stats</h5>
               <p>Followers: {user.followers}</p>
               <p>Following: {user.following}</p>

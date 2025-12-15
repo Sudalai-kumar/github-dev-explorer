@@ -42,16 +42,15 @@ function GitHubUsers() {
     <Container className="py-4">
       <Row className="g-3">
         {users.map((user) => (
-          <Col key={user.id} xs={12} sm={6} md={4} lg={3}>
+          <Col key={user.id} xs={12} sm={6} md={4}>
             <Card className="h-100 text-start">
-              <Card.Body className="d-flex flex-column">
-                <div className="mb-2">
-                  <div className="fw-bold text-monospace">{user.login}</div>
+              <Card.Body className="d-flex flex-column" >
+                <div>
+                  <h6 className="fw-bold mb-1">{user.login}</h6>
                   <div className="text-muted small">Type: {user.type}</div>
-                  <div className="text-muted small">GitHub ID: {user.id}</div>
+                  <div className="text-muted small">ID: {user.id}</div>
                 </div>
-
-                <div className="mt-auto">
+                <div className="mt-auto pt-2">
                   <Button
                     as={Link}
                     to={`/user/${user.login}`}

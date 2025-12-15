@@ -1,7 +1,27 @@
 .text-monospace {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",
+    monospace;
 }
 
 .card {
-  border: 1px solid #f0f0f0;
+  border: 1px solid #96fefc;
+}
+body {
+  background-color: #f8f9fa;
+}
+  
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
